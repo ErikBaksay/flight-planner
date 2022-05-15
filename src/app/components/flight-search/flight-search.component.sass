@@ -1,0 +1,65 @@
+
+.container
+    width: 100%
+    height: 92vh
+    display: grid
+    grid-template-rows: 1fr 1fr
+    grid-template-columns: 1fr
+    h2
+        margin-left: 4vw
+        font-size: 20px
+        font-weight: 700
+    h4
+        font-size: 16px
+    #searchDiv
+        width: 100%
+        align-self: center
+        margin-bottom: 10vh
+        h2
+            margin-bottom: 8px
+        #search
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            .searchBar
+                background-color: rgba(255, 255, 255, 0.8)
+                padding: 2px 1vw
+                width: 94vw
+                display: flex
+                flex-direction: row
+                align-items: center
+                img
+                    height: 25px
+                    margin-right: 10px
+                input
+                    width: 80vw
+                    height: 5vh
+                    background-color: rgba(0, 0, 0, 0)
+                    border: none
+            .searchBar:first-of-type
+                border-radius: 10px 10px 0 0
+                border-bottom: 1px solid #B4B4B4
+            .searchBar:last-of-type
+                border-radius: 0 0 10px 10px
+    #destinationsDiv
+        width: 100%
+        overflow: hidden
+        align-self: center
+        #popularDestinationsContainer
+            display: flex
+            flex-direction: row
+            overflow: scroll
+            .popularDestination
+                margin: 2vw
+                h4
+                    color: white
+                .destinationImageContainer
+                    height: 25vh
+                    width: 25vh
+                    overflow: hidden
+                    border-radius: 10px
+                    img
+                        object-fit: cover
+                        height: 100%
+                        width: 100%
