@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FlightSearchComponent } from './components/flight-search/flight-search.component';
+import { DestinationsComponent } from './components/destinations/destinations.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FlightSearchComponent
+    FlightSearchComponent,
+    DestinationsComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
